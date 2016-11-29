@@ -12,25 +12,34 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>School Survey</h1>
         <hr>
         <form action="http://www.w3schools.com/tags/demo_form.asp" method="get">
 
-            Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
-
-            <!--add your own inputs below-->
-
-
-
-
-
-
-
-
-            <!--add your own inputs above-->
-
+            Full Name:<br> 
+            <input type="text" name="name" required><br> 
+            
+            Gender:<br> 
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br> 
+            
+            E-mail:<br> 
+            <input type="email" name="email" placeholder="HSTAT e-mail"><br>
+            
+            Classes:<br>
+            <textarea name="classes"></textarea><br>
+            
+            Favorite Subject<br>
+            <select name="Favorite Subject">
+                <option value="Other" selected> Other </option>
+                <option value="Math"> Math </option>
+                <option value="English"> English </option>
+                <option value="History"> History </option>
+                <option value="Science"> Science </option>
+                <option value="Spanish"> Spanish </option>
+                <option value="Gym"> Gym </option>
+            </select><br>
+            
             <input class="blue-button" type="submit" value="Submit">
         </form>
     </div>
